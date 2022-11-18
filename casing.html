@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cases</title>
+  <link id='csslink' rel="stylesheet" href="projstyle1.css"/>
+
+  <script>
+    function toggleCSS() {
+        var currentCSS = document.getElementById('csslink');
+        
+        if (currentCSS.getAttribute('href') == 'alternate.css') {
+            currentCSS.setAttribute('href', 'projstyle1.css');
+        } else {
+            currentCSS.setAttribute('href', 'alternate.css')
+        }
+    }
+  </script>
+</head>
+<body>
+  <div>
+    <header>
+        <a href="proj.html">back</a>
+        <h1>Casings</h1>
+    </header>
+    <article class="info">
+        <p>
+            Other than the obvious different sizes the casings can have, I want to explain the possible materials the casings can be made from. Let's start
+            with the most common material which is brass. One of the most popular reasons for why brass is used is because it is a tough material that can withstand
+            the high pressures of the gases releasing from the ignited gun powder AND it is corrosion resistant which makes it good for long-term storage. 
+            You can also reuse the brass case because of its ductile nature, meaning able to be deformed without cracking. The second material that casings 
+            could be made out of is steel. Steel cased ammo is associated as being cheap and budget friendly. However, it is also known to jam up some weapons
+            because while the case mouth does expand while being fired, which is what we want to create a seal for the gases, it does not contract well. The third
+            material is aluminum. These exist for the same reasons as steel cased ammo. They are cheaper to produce, but an advantage this has over the steel is 
+            that the material is lighter. 
+        </p>
+    </article>
+    <table class = "casetable">
+        <tr>
+            <td></td>
+            <th>Cost</th>
+            <th>Malleability</th>
+            <th>Storage</th>
+            <th>Weight</th>
+        </tr>
+        <tr>
+            <th>Brass</th>
+            <td>X</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>Y</td>
+        </tr>
+        <tr>
+            <th>Steel</th>
+            <td>Y</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <th>Aluminum</th>
+            <td>Y</td>
+            <td>X</td>
+            <td>Y</td>
+            <td>Y</td>
+        </tr>
+    </table>
+    <div class="caseimg">
+        <img src="img/brass.jpg" alt="">
+        <img src="img/steel.jpg" alt="">
+        <img src="img/alu.webp" alt="">
+    </div>
+    <footer>
+        <p>&#169; 2022 Doan</p>
+        <p>Designed by Francis Doan</p>
+        <button onclick="toggleCSS()">Enhance</button>
+    </footer>
+  </div>    
+</body>
+</html>

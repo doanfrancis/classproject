@@ -1,0 +1,101 @@
+header.safety h1 img {
+    width: 100px;
+}
+
+.safety {
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    text-align: center;
+}
+
+article h3 {
+    text-align: center;
+}
+
+article p {
+    text-align: center;
+} 
+
+div.imgcontainer img{
+    padding-top: 100px;
+    height: 300px;
+    display: inline-block;
+}
+
+.imgcontainer{
+    text-align: center;
+}
+
+div.caseimg img{
+    padding-top: 100px;
+    height: 300px;
+    display: inline-block;
+}
+
+.caseimg{
+    text-align: center;
+}
+article.info p {
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+}
+
+.powderimg {
+    padding-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+.primerchart {
+    padding-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+.casetable {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.casetable tr{
+    text-align: left;
+}
+
+.casetable td{
+    text-align: center;
+}
+
+
+p {
+    line-height: 2;
+}
+
+dl dt img {
+    height: 100px
+}
+
+dl {
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 100px;
+}

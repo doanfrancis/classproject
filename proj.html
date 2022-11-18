@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Index</title>
+  <link id='csslink' rel="stylesheet" href="projstyle1.css"/>
+
+  <script>
+    function toggleCSS() {
+        var currentCSS = document.getElementById('csslink');
+        
+        if (currentCSS.getAttribute('href') == 'alternate.css') {
+            currentCSS.setAttribute('href', 'projstyle1.css');
+        } else {
+            currentCSS.setAttribute('href', 'alternate.css')
+        }
+    }
+  </script>
+</head>
+<body>
+    <div>
+        <header class = "safety">
+            <h1><img src="img/gun-safety.jpg" alt="">Disclaimer<img src="img/gun-safety.jpg" alt=""></h1>
+            <p>Although this is only containing information on ammunition, I want to remind everyone that gun safety is always top
+            priority.</p>
+            <p><a href="https://gunsafetyrules.nra.org/">General Gun Safety Rules</a></p>
+        </header>
+        <nav class="navigation">
+            <p><a href="pimer.html">Primers</a></p>
+            <p><a href="casing.html">Casings</a></p>
+            <p><a href="powder.html">Powders</a></p>
+            <p><a href="bullettip.html">Bullet Tips</a></p>
+        </nav>
+        <article>
+            <h3>Ammunition</h3>
+            <p>Modern day ammunition is made up of four parts: the primer, casing, powder, and bullettip.
+            The primer is what ignites the powder, the powder releases energy to propel the bullet tip, and the casing holds it all together!
+            Please click on the links to the left of the page to find out more about each component.</p>
+        </article>
+        <div class="imgcontainer">
+            <img src="img/primers.jpg" alt="">
+            <img src="img/casings.webp" alt="">
+            <img src="img/gunpowder.jpg" alt="">
+            <img src="img/tips.webp" alt="">
+        </div>
+        <footer>
+            <p>&#169; 2022 Doan</p>
+            <p>Designed by Francis Doan</p>
+            <button onclick="toggleCSS()">Enhance</button>
+        </footer>
+    </div>
+    
+</body>
+</html>

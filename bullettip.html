@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tips</title>
+  <link id='csslink' rel="stylesheet" href="projstyle1.css"/>
+
+  <script>
+    function toggleCSS() {
+        var currentCSS = document.getElementById('csslink');
+        
+        if (currentCSS.getAttribute('href') == 'alternate.css') {
+            currentCSS.setAttribute('href', 'projstyle1.css');
+        } else {
+            currentCSS.setAttribute('href', 'alternate.css')
+        }
+    }
+  </script>
+</head>
+<body>
+  <div>
+    <header>
+        <a href="proj.html">back</a>
+        <h1>Bullet Tips</h1>
+    </header>
+    <article class="info">
+        <p>
+            There are differences is the exterior of the projectles as well as the shapes. For this article I will just be talking about the different shapes 
+            the bullet tips can have. There are three main types: round nose, flat point, hollow point. Round nose have a rounded tip and flat point is just flat.
+            Round nose and flat point pretty much serve the same purpose which is target practice. The difference is that while a firearm may operate better with 
+            round nose, it will not create as clean a hole as flat point on paper. Hollow point bullets looks like a flat point but someone took a drill to the tip.
+            the purpose of the hollow point is that it will expand on impact create massive damage. It is used for self-defense and good for mitigating overpenetration.
+        </p>
+        <dl>
+            <dt>Round Nose<img src="img/roundnose.jpg" alt=""></dt>
+            <dd>- Rounded tip used mainly for target practice</dd>
+            <dd><br></dd>
+            <dt>Flat Point<img src="img/flat-point.jpeg" alt=""></dt>
+            <dd>- Flat tip used mainly for target practice. Punches cleaner holes in paper than round nose.</dd>
+            <dd><br></dd>
+            <dt>Hollow Point<img src="img/hollowpoint.jpg" alt=""></dt>
+            <dd>- Designed to expand upon impact causing major damage to the target. Mitigates overpenetration, good for lowering collateral damage.</dd>
+        </dl>
+    </article>
+    <footer>
+        <p>&#169; 2022 Doan</p>
+        <p>Designed by Francis Doan</p>
+        <button onclick="toggleCSS()">Enhance</button>
+    </footer>
+  </div>    
+</body>
+</html>

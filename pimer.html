@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Primers</title>
+  <link id='csslink' rel="stylesheet" href="projstyle1.css"/>
+
+  <script>
+    function toggleCSS() {
+        var currentCSS = document.getElementById('csslink');
+        
+        if (currentCSS.getAttribute('href') == 'alternate.css') {
+            currentCSS.setAttribute('href', 'projstyle1.css');
+        } else {
+            currentCSS.setAttribute('href', 'alternate.css')
+        }
+    }
+  </script>
+</head>
+<body>
+  <div>
+    <header>
+        <a href="proj.html">back</a>
+        <h1>Primers</h1>
+    </header>
+    <article class="info">
+        <p>
+            Not all primers are the same. You have rifle and pistol primers, small and large, and magnum. Primers could be any combination of these. For example, 
+            small/large rifle, small/large pistol and either could have a magnum tag on it. The difference between rifle and pistol primer is pretty much the thickness
+            of the material. This is to prevent the firing pin to puncture the primer, causing damage to the pin itself. Large and small primer is self-explanatory, the
+            overall diameter of the primer is different. If the primer says magnum, that just means that it has a little more power to help ignite the powder. There was 
+            actually a shortage of primers recently due to the pandemic disrupting supply chains and the overall social political climate
+            causing many people to panic buy firearms and ammunition. This in turn caused manufacturers to bump up ammo production sucking up
+            any primers and leaving reloaders, those that make their own ammunition at home, with nothing. This chart is here to inform such people about which 
+            primers could be substituted for what. Here is an <a href="https://thecastlearms.com/blog/why-is-there-a-primer-shortage">article</a> with more information
+            on the shortage.
+        </p>
+        <img class="primerchart" src="img/primersizes.webp" alt="">
+    </article>
+    <footer>
+        <p>&#169; 2022 Doan</p>
+        <p>Designed by Francis Doan</p>
+        <button onclick="toggleCSS()">Enhance</button>
+    </footer>
+  </div>    
+</body>
+</html>

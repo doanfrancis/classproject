@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Powder</title>
+  <link id='csslink' rel="stylesheet" href="projstyle1.css"/>
+
+  <script>
+    function toggleCSS() {
+        var currentCSS = document.getElementById('csslink');
+        
+        if (currentCSS.getAttribute('href') == 'alternate.css') {
+            currentCSS.setAttribute('href', 'projstyle1.css');
+        } else {
+            currentCSS.setAttribute('href', 'alternate.css')
+        }
+    }
+  </script>
+</head>
+<body>
+  <div>
+    <header>
+        <a href="proj.html">back</a>
+        <h1>Powders</h1>
+    </header>
+    <article class="info">
+        <p>
+            There is a lot more to gun powder than just a grainy powder that burns. The actual powder itself can take on different shapes depending on which company
+            produced it. It could look like little rods or flakes or tiny pellets but that does not matter much in terms of how it performs in a firearm. What matters
+            is the burn rate of the powder. For the best performance, you want the powder to reach peak burn near the end of the barrel. This is a balancing act between
+            barrel length and powder burn rate. Generally, you'd want a faster burning powder in shorter barrels and slower burning powder in longer barrels. If the 
+            barrel is too short, there won't be enough time for the powder to burn and if it is too long, the projectile could actually slow down a bit while in the barrel.
+            Both scenarios results in a slower velocity.
+        </p>
+    </article>
+    <img class = "powderimg" src="img/powders.jpg" alt="">
+    <footer>
+        <p>&#169; 2022 Doan</p>
+        <p>Designed by Francis Doan</p>
+        <button onclick="toggleCSS()">Enhance</button>
+    </footer>
+  </div>    
+</body>
+</html>
